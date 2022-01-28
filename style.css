@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+/*scope, or range*/ :root /*custom properties/universal variables declare around the website*/
+{ 
+    --primary-color: palegreen;
+    --secondary-color: rgb(255,78,78);
+    --dark-color: palegreen;
+    --light-color: white;
+}
+
+* {
+    box-sizing: border-box; /* Border-box lets us padding & border without having to add to the width of an element */
+    padding: 0;
+    margin: 0;
+}
+
+body { /* Changes the font and color */
+    font-family: 'Dongle', sans-serif;
+    color: black;
+    line-height: 1.6;
+    
+}
+
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+ul { /* get rids of bulletin points*/
+    list-style-type: none;
+    font-size: 25px;
+}
+
+a { /*removes text modification*/
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2 { /* modifies heading one and two */
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 10px 0;
+
+}
+
+p { /* so they're not mushed together */
+    margin: 10px 0;
+}
+
+img { /* keeps the image in the container */
+    width: 100;
+}
+/* NavBar Styling */
+.navbar { /* modifies the navigational bar on the top right */
+    background-color: palegreen;
+    color: black;
+    height: 70px; 
+}
+
+.navbar ul { /* modifies navbar's unordered list */
+    display: flex;
+}
+.navbar a { /* modifies navbar's margin between one another in addition to font */
+    color: black;
+    padding: 10px;
+    margin: 0 5px; /* breaks them up more 0 px top n bottom 5px left n right */
+}
+
+.navbar a:hover { /* animation for lines at the bottom whenenver hovered over */
+    border-bottom: 2px black solid; /* used for border animation at the bottom */
+}
+
+.navbar .flex { /* puts a .flex tag on .nav calling attributes and able to add modifers */
+    justify-content: space-between; /* defines how the browser distributes space between and around content items along the main-axis of a flex container */
+}
+
+/* Showcase / Carry */
+.showcase { 
+    height:400px; /* changes the height of the container */
+    background-color: rgb(255, 78, 78); /* changes color of showcase bg */
+    color: black; /* change the color of font in showcase */
+    position: relative; /* to make it not clash */
+}
+.showcase-text { /* aligns the text relative to the grid in the center in showcase */
+    position: relative;
+    text-align: center;
+}
+
+.showcase h1 { /* changes font size of heading 1 */
+    font-size: 40px; /*create variation*/
+}
+.showcase p { /* changes the margin of paragaph */
+    margin: 20px 0; 
+}
+.showcase .grid { 
+    overflow: visible;  /*overflows the property*/ 
+    grid-template-columns: 55% 45%; /* text, form part */
+    gap: 30px;
+    
+}
+
+.showcase-form {
+    position: relative; /* room for a room property */
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100; /* z-layer:100 so always in front */
+    justify-self: flex-end;  /* pushes form to the right */
+    border: black solid 2px ; /* border around the form*/
+}
+
+.showcase-form .form-control {
+    margin: 30px 0; /* seperates the prompt */
+}
+
+.showcase-form input[type='text'], /* calls type='text,email' to modify form input visuals */
+.showcase-form input[type='email'] {
+  border: 0; /* disables border */
+  border-bottom: 1px solid black; /* underlines the form input*/
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  background-color: var(--primary-color); /* background color of form */
+}
+
+.showcase-form input:focus { 
+    outline: none; /*get rids of the border when clicking in to type*/
+}
+
+.showcase::before, /* keyword added to a selector that lets you style a specific part of the selected element(s). */
+.showcase::after { /* selects before and after */
+    content: '';
+    position: absolute;
+    height: 120px; /* Transforming a slant */
+    bottom: -70px; /* Transforming a slant */
+    right: 0;
+    left: 0;
+    background: palegreen;
+    transform: skewY(-3 deg); /* Transforming a slant */
+    -webkit-transform: skewY(-3deg); /* Platform Support */
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+/* Stats */
+
+.stats {
+    padding-top: 100px; /* pushes text below the slant */
+    background-color: var(--secondary-color);
+}
+
+.stats-heading { /* modifies the heading of stats portion*/
+    max-width: 500px; /* the distance between the icons*/
+    margin:auto; /* alignment */
+    
+}
+
+.stats .grid h3{ /* modifies the font size of heading 3 in the grid */
+    font-size: 35px;
+}
+
+.stats .grid p { /* modifies the font size of paragraph in the grid*/
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+}
+
+/* Cli */ /* Need to Change */
+
+.cli { /* makes .cli section green bg */
+    background-color: var(--primary-color); scale: 1.0;;
+    
+    overflow: visible;
+}
+
+.cli .grid { /* splits the grid into a 2x3 grid */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cli .grid > *:first-child { /* Refers to First Child, so this is the image */
+    grid-column: 1 / span 2; /* Spans the scream */
+    grid-row: 1 / span 2;
+}
+.cli .card {
+    border: 1px black solid;
+}
+
+/* Cloud */ 
+
+.cloud {
+    
+    overflow: hidden;   
+}
+
+
+.cloud .grid { /* splits the grid into 3x2 */
+    grid-template-columns: 4fr 3fr;
+    overflow: hidden;
+}
+
+/* Languages */
+
+.languages{
+    margin: 85px; /* pushes text down */
+    text-align: center; 
+}
+
+.languages .flex{ /* allows divs to stack atop of each other to be viewed like a column */
+    flex-wrap: wrap;
+}
+
+.languages .card { /* aligns the text; */
+    text-align: center;
+    margin: 18px 10px 40px; /* top margin is 18px, right and left margins are 10px, bottom margin is 40px */  
+    transition: transform 0.2s ease-in; /* smoother animation when hovering over card*/
+}
+
+.languages .card h4 { /* setting the font-size for heading 4 */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover { /* when card is hovered over */
+    transform: translateY(-15px);
+}
+
+.languages {
+    background-color: var(--secondary-color);
+}
+
+
+/* Footer */
+.footer .socials a { /* sets the distance between socials*/
+    margin: 0 10px; /* top and bottom margins is 0, right and left is 10px */
+}
+
+.footer {
+    scale:1.2;
+    overflow: hidden;
+}
+/* Media Inquiry Pt.1 : Tablets and Under Support */
+
+@media(max-width:768px) { /* Viewing / Responsiveness Optimization */
+
+    .grid, /* stacks elements into a column */
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; /* cli area has two rows; 1 to compensate */
+    }
+    
+    .showcase { /* takes up the amount of the container; reduces text clashing */
+        height: auto;
+    }
+
+    .showcase-text { /* aligns text to center */
+        text-align: center; /* for smaller screens */
+        margin-top: 40px; /* pushes it down a little */
+    }
+
+    .showcase-form { /* put on a grid or flex item to justify specifically */
+        justify-self: center; 
+        margin: auto;
+    }
+    .cli .grid > *:first-child { /* Refers to First Child */
+        grid-column: 1; /* Resets 1 / span 2 to take up 1x1 on a grid */
+        grid-row: 1;
+    }
+}
+
+/* Media Inquiry Pt.2 : Mobile Support */
+@media(max-width:500px) {
+    .navbar { /* puts the menu item under the logo for more room or add a hamburger menu */
+        height: 110px; 
+    }
+
+    .navbar .flex { /* puts the logo and nav atop of each other */
+        flex-direction: column;
+    }
+
+    .navbar ul { /* Navbar Elements */
+        padding: 10px;
+        background: rgba(0,0,0,0.1); /* rgba(0,0,0,0.1) for cool transparent background */
+    }
+}
