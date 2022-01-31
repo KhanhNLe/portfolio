@@ -1,5 +1,14 @@
 /* Utilities - classes that we will use all around the website */
 
+/*scope, or range*/ :root /*custom properties/universal variables declare around the website*/
+{ 
+    --primary-color: palegreen;
+    --secondary-color: rgb(255,78,78);
+    --dark-color: palegreen;
+    --light-color: white;
+}
+
+
 .container { /* declares container properties */
     max-width: 1100px;
     margin: 0 auto;
@@ -62,11 +71,11 @@
 }
 
 /* Background & Colored Buttons */
+
 .bg-primary,
 .btn-primary {
     background-color: var(--primary-color);
     color: black;
-    border: 1px black solid;
 }
 
 .bg-secondary,
@@ -114,6 +123,12 @@
     text-align: center;
 }
 
+.text-centercoloredbar {
+    background: var(--primary-color);
+    text-align: center;
+    margin: 0;
+}
+
 /* Margins */ /*added  my-2bg py-2bg 1/28/2022 */
 
 .my-1 { /* spaces the margin */
@@ -121,6 +136,7 @@
 }
 .my-2 {
     margin: 1.5rem 0;
+
 }
 .my-3 {
     margin: 2rem 0;
