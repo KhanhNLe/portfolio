@@ -50,7 +50,7 @@ img { /* keeps the image in the container */
 
 .hidden {
     visibility: hidden;
-    height: 0%;
+    height: 0;
 }
 
 
