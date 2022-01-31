@@ -171,11 +171,10 @@ img { /* keeps the image in the container */
     background-color: var(--secondary-color);
 }
 
-/* Cli */ /* Need to Change */
+/* Cat or CLI */ /* Need to Change */
 
 .cli { /* makes .cli section green bg */
-    background-color: var(--primary-color); scale: 1.0;;
-    
+    background-color: var(--primary-color);
     overflow: visible;
 }
 
@@ -192,24 +191,24 @@ img { /* keeps the image in the container */
     border: 1px black solid;
 }
 
-/* Cloud */ 
-
-.cloud {
-    
-    overflow: hidden;   
-}
-
-
 .cloud .grid { /* splits the grid into 3x2 */
     grid-template-columns: 4fr 3fr;
     overflow: hidden;
 }
 
+/* Background Colors */
+
+.background {
+    background-size: cover;
+}
+
 /* Languages */
 
 .languages{
-    margin: 85px; /* pushes text down */
+    margin: 60px --secondary-color solid ; /* pushes text down */
     text-align: center; 
+    background-color: var(--secondary-color);
+    background-color: cover;
 }
 
 .languages .flex{ /* allows divs to stack atop of each other to be viewed like a column */
@@ -230,11 +229,6 @@ img { /* keeps the image in the container */
 .languages .card:hover { /* when card is hovered over */
     transform: translateY(-15px);
 }
-
-.languages {
-    background-color: var(--secondary-color);
-}
-
 
 /* Footer */
 .footer .socials a { /* sets the distance between socials*/

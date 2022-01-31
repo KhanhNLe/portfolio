@@ -38,6 +38,7 @@
     grid-template-columns:repeat(3, 1fr);
 }
 
+
 /* Stock Buttons */
 
 .btn { /* stock button styling */
@@ -86,15 +87,6 @@
     color: black;
 }
 
-.bg-primary a, /* changes the following modifiers to be bold and black */
-.btn-primary a,
-.bg-secondary a,
-.btn-secondary a,
-.bg-dark a,
-.btn-dark a {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
 
 /* Text Sizes */
 
@@ -122,16 +114,7 @@
     text-align: center;
 }
 
-/* Background Coverage */
-.cloud ,
-.bg-secondary ,
-.my-p2 ,
-.py-2 {
-    scale: 1.2;
-    overflow: hidden;
-}
-
-/* Margins */
+/* Margins */ /*added  my-2bg py-2bg 1/28/2022 */
 
 .my-1 { /* spaces the margin */
     margin: 1rem 0; /* rem = css unit that multiplier of root element font size; default 16 px = 1 rem*/ 
@@ -148,6 +131,8 @@
 .my-5 {
     margin: 4rem 0;
 }
+
+
 
 .m-1 { /* spaces the margin */
     margin: 1rem 0; /* rem = css unit that multiplier of root element font size; default 16 px = 1 rem*/ 
