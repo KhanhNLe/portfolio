@@ -86,9 +86,9 @@ img { /* keeps the image in the container */
     position: relative; /* to make it not clash */
 }
 .showcase-text { /* aligns the text relative to the grid in the center in showcase */
-    position: relative;
+    position: center;
     text-align: center;
-    animation: slideInFromLeft 1s ease-in;
+    animation: slideInFromTop 1s ease-in;
 }
 
 .showcase h1 { /* changes font size of heading 1 */
@@ -147,7 +147,9 @@ img { /* keeps the image in the container */
     -webkit-transform: skewY(-3deg); /* Platform Support */
     -moz-transform: skewY(-3deg);
     -ms-transform: skewY(-3deg);
+    z-index: -99;
 }
+/*
 
 /* Body1 */
 
