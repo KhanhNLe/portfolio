@@ -43,6 +43,10 @@
     height: 100%;
 }
 
+.grid-1 {
+    grid-template-columns: 1fr;
+}
+
 .grid-3 { /* grid-3 modifiers */
     grid-template-columns:repeat(3, 1fr);
 }
@@ -148,6 +152,10 @@
     margin: 4rem 0;
 }
 
+.my-5 {
+    margin: 8rem 0;
+}
+
 
 
 .m-1 { /* spaces the margin */
@@ -197,4 +205,15 @@
 }
 .p-5 {
     padding: 4rem;
+}
+
+
+/* Placement */
+
+.putinmiddle {
+    justify-self: center;
+}
+
+.nobars {
+    overflow: hidden;
 }

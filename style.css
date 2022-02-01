@@ -78,6 +78,33 @@ img { /* keeps the image in the container */
     justify-content: space-between; /* defines how the browser distributes space between and around content items along the main-axis of a flex container */
 }
 
+/* Navbar Footer Styling */
+
+.footnavbar { /* modifies the navigational bar on the top right */
+    background-color: palegreen;
+    color: black;
+    height: 70px; 
+}
+
+.footnavbar ul { /* modifies footnavbar's unordered list */
+    display: flex;
+}
+.footnavbar a { /* modifies footnavbar's margin between one another in addition to font */
+    color: black;
+    padding: 10px;
+    margin: 0 50px; /* breaks them up more 0 px top n bottom 5px left n right */
+}
+
+.footnavbar a:hover { /* animation for lines at the bottom whenenver hovered over */
+    border-bottom: 2px black solid; /* used for border animation at the bottom */
+}
+
+.footnavbar .flex { /* puts a .flex tag on .nav calling attributes and able to add modifers */
+    justify-content: space-between; /* defines how the browser distributes space between and around content items along the main-axis of a flex container */
+}
+
+
+
 /* Showcase / Carry */
 .showcase { 
     height:400px; /* changes the height of the container */
@@ -112,7 +139,6 @@ img { /* keeps the image in the container */
     padding: 40px;
     z-index: 100; /* z-layer:100 so always in front */
     justify-self: flex-end;  /* pushes form to the right */
-    border: black solid 2px ; /* border around the form*/
     animation: slideInFromRight 1s ease-in-out;
 }
 
@@ -149,7 +175,6 @@ img { /* keeps the image in the container */
     -ms-transform: skewY(-3deg);
     z-index: -99;
 }
-/*
 
 /* Body1 */
 
@@ -175,6 +200,7 @@ img { /* keeps the image in the container */
     font-size: 20px;
     font-weight: bold;
     background-color: var(--secondary-color);
+    padding: 4.5rem;
 }
 
 /* body2 */
@@ -278,7 +304,8 @@ img { /* keeps the image in the container */
 /* Contacts */
 
 .contacts {
-    min-height: 100vh;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -290,7 +317,7 @@ img { /* keeps the image in the container */
 
 .contacts .card { /* aligns the text; */
     text-align: center;
-    margin: 18px 10px 40px; /* top margin is 18px, right and left margins are 10px, bottom margin is 40px */  
+    margin: 18px 15px 40px; /* top margin is 18px, right and left margins are 10px, bottom margin is 40px */  
     transition: transform 0.2s ease-in; /* smoother animation when hovering over card*/
 }
 
@@ -306,7 +333,7 @@ img { /* keeps the image in the container */
 
 /* Footer */
 .footer .socials a { /* sets the distance between socials*/
-    margin: 0 10px; /* top and bottom margins is 0, right and left is 10px */
+    margin: 0 15px; /* top and bottom margins is 0, right and left is 10px */
 }
 
 .footer {
@@ -362,8 +389,8 @@ img { /* keeps the image in the container */
     .grid, /* stacks elements into a column */
     .showcase .grid,
     .body1 .grid,
-    .body2 .grid,
-    .projects .grid {
+    .projects-main .grid,
+    .contacts .grid {
         grid-template-columns: 1fr; 
         grid-template-rows: 1fr; /* projects area has two rows; 1 to compensate */
     }
@@ -384,7 +411,7 @@ img { /* keeps the image in the container */
         animation: slideInFromBottom 1s ease-in;
 
     }
-    .body2 .grid > *:first-child { /* Refers to First Child */
+    .projects-main .grid > *:first-child { /* Refers to First Child */
         grid-column: 1; /* Resets 1 / span 2 to take up 1x1 on a grid */
         grid-row: 1;
     }
@@ -401,6 +428,18 @@ img { /* keeps the image in the container */
     }
 
     .navbar ul { /* Navbar Elements */
+        padding: 10px;
+        background: rgba(0,0,0,0.1); /* rgba(0,0,0,0.1) for cool transparent background */
+    }
+    .footnavbar { /* puts the menu item under the logo for more room or add a hamburger menu */
+        height: 110px; 
+    }
+
+    .footnavbar .flex { /* puts the logo and nav atop of each other */
+        flex-direction: column;
+    }
+
+    .footnavbar ul { /* Navbar Elements */
         padding: 10px;
         background: rgba(0,0,0,0.1); /* rgba(0,0,0,0.1) for cool transparent background */
     }
