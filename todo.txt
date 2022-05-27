@@ -1,0 +1,11 @@
+TODO
+1. Change the color Palette to 
+a. text
+2. Menu
+3. bars
+
+/* #DDDDDD 
+   #222831
+   #30475E
+   #F05454  */
+2. fixing the spacing

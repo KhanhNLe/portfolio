@@ -4,10 +4,10 @@
 
 /* Variables */
 :root {
-    --primary-color: rgb(78, 76, 76);
-    --secondary-black: #804040;
-    --secondary-gray: #48464b;
-    --body-bg: #85848767;
+    --primary-color: #222831;
+    --secondary-black: #222831;
+    --secondary-gray: #DDDDDD;
+    --body-bg: #222831;
     --text-opacity: rgba(255, 255, 255, 0.616);
 }
 
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background-color: var(--body-bg)
+    background-color: #30475E
 }
 
 img {
@@ -38,7 +38,7 @@ img {
 }
 
 a {
-    color: rgb(0, 0, 0);
+    color: #F05454;
     text-decoration: none;
     /* No text decorations */
 }
@@ -161,7 +161,7 @@ p {
 }
 
 #header ul li a {
-    color: #333;
+    color: #DDDDDD;
     display: inline-block;
     /* inline-block allows to set a width and height on the element. Also, the top and bottom margins/paddings are respected, but with inline they are not. */
     padding: 1em 3em;
@@ -202,7 +202,7 @@ p {
 #header .homebtn::after {
     display: inline;
     content: "\f015";
-    color: #333;
+    color: #DDDDDD;
     font-family: "FontAwesome";
     left: 50px;
     top: 6px;
@@ -214,7 +214,7 @@ p {
 
 #header .navbtn-open:after {
     /* Use the ::after selector to insert something after the content. */
-    color: #333;
+    color: #DDDDDD;
     content: "\f0c9";
     /* content: sets the font color in an element */
     font-family: "FontAwesome";
@@ -453,7 +453,7 @@ p {
     font-size: 1.8rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: var(--primary-color);
+    color: #DDDDDD;
     opacity: 0;
     animation: fade 0.3s ease-in forwards;
     animation-delay: 1s;
