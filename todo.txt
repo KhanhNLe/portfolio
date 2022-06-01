@@ -4,8 +4,47 @@ a. text
 2. Menu
 3. bars
 
+/* Variables */
+:root {
+    --primary-color: #30475E;
+    --bulleyes: #F05454;
+    --secondary-white: #DDDDDD;
+    --body-bg: #222831;
+    --text-opacity: rgba(255, 255, 255, 0.616);
+}
+
 /* #DDDDDD 
    #222831
    #30475E
    #F05454  */
 2. fixing the spacing
+
+<div class="navbarsocial">
+                    <!-- TODO Fix the Icons -->
+                    <!-- Navbar Overlay Social Elements -->
+                    <!-- TODO Invert the Logo's Colors-->
+                     <a href="#https://www.linkedin.com/in/khanh-le-50003b184/">
+                        <div class="social-icon">
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                        <a href="#https://github.com/KhanhNLe">
+                            <div class="social-icon">
+                                <i class="fa fa-github"></i>
+                            </div>
+                        </a>
+                        <a href="mailto:schoolboykon@gmail.com">
+                            <div class="social-icon">
+                                <i class="fa fa-mail-forward"></i>
+                            </div>
+                        </a>
+                    </a>
+                    <!-- Disable bc I don't have Twitter LOL -->
+                    <a href="#">
+                        <!-- Social Media Icons that Links 
+                        <div class="social-icon">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </a>
+                    -->
+                </div>
+            </div>
