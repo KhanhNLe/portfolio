@@ -150,10 +150,12 @@ p {
     text-align: center;
     /* Moves <nav> elements to middle */
     width: 100%;
-    position: relative;
+    position: fixed;
     height: auto;
     overflow: hidden;
     background: var(--secondary-black);
+    z-index: 99; /* Highest Order for Z-Layer */
+
 }
 
 #header nav ul {
@@ -374,6 +376,7 @@ p {
 }
 
 #header .social-icon {
+    left: 0;
     width: 80px;
     height: 50px;
     background: var(--body-bg);
@@ -396,9 +399,19 @@ p {
     margin-top: 12px;
 }
 
-@media screen and (max-width:48em) {
 
+@media screen and (max-width:768px) {
     /* Navbar Mobile Responsiveness */
+    #header nav {
+        height: 8rem;
+        align-items: flex-start
+    }
+    
+    #header .homebtn::after {
+        opacity: 0%;
+    }
+
+
     #header .wrap ul.nav-nav>li {
         width: 100%;
         padding: 20px 0;
@@ -607,7 +620,7 @@ p {
 
 #languages .all-items {
     display: flex;
-    align-items: center;
+    align-items: normal;
     justify-content: center;
 }
 
@@ -866,6 +879,7 @@ p {
 
 #about .left .card .card-sub-title {
     font-size: 1.4rem;
+    text-wrap: balance;
 }
 
 #about .subheading {
@@ -1091,6 +1105,7 @@ p {
 #footer footer .column-3,
 #footer footer .column-4 {
     flex: 2;
+    text-align: center;
 }
 
 #footer footer .column-4 {
@@ -1140,10 +1155,12 @@ p {
 
 #footer footer ul li a {
     display: inline-block;
-    width: 100%;
+    width: auto;
     color: var(--secondary-white);
     font-size: 1.7rem;
     padding: 0.5rem;
+    text-align: center;
+    margin: 0.5rem;
 }
 
 #footer footer .column-4 ul {

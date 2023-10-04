@@ -9,3 +9,9 @@ $('.overlay').on('click', function(){ // Interacting outside of the overlay clos
     $(".navbutton a").toggleClass('navbtn-open').toggleClass('navbtn-close');
     open = false;
 });
+
+// Animation
+// gsap.to("#hero .container .right", {
+//     y: 86,
+//     }
+// );
