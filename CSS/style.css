@@ -4,11 +4,11 @@
 
 /* Variables */
 :root {
-    --primary-color: #30475E;
-    --bulleyes: #F05454;
-    --secondary-black: #222831;
-    --secondary-white: #DDDDDD;
-    --body-bg: #30475E;
+    --primary-color: #6e485c;
+    --bulleyes: #b7e0f4;
+    --secondary-black: #a5747c;
+    --secondary-white: #e2f3fd;
+    --body-bg: #b899ac;
     --text-opacity: rgba(255, 255, 255, 0.616);
 }
 
@@ -107,6 +107,7 @@ p {
     margin-bottom: 10rem;
 }
 
+
 .section-heading::before {
     /* Text Outline behind Heading */
     content: attr(data-outline);
@@ -126,9 +127,9 @@ p {
 
 .buttons .primary-btn.outline {
     background-color: transparent;
-    color: var(--secondary-white);
+    color: var(--bulleyes);
     border-radius: 50px;
-    border: 2px solid var(--secondary-white);
+    border: 2px solid var(--bulleyes);
 }
 
 /* Header / Navbar Section */
@@ -153,7 +154,7 @@ p {
     position: fixed;
     height: auto;
     overflow: hidden;
-    background: var(--secondary-black);
+    background: linear-gradient(to top, rgb(148,103,124) , rgb(237,184,197)    );
     z-index: 99; /* Highest Order for Z-Layer */
 
 }
@@ -167,7 +168,7 @@ p {
 }
 
 #header ul li a {
-    color: #DDDDDD;
+    color: var(--);
     display: inline-block;
     /* inline-block allows to set a width and height on the element. Also, the top and bottom margins/paddings are respected, but with inline they are not. */
     padding: 1em 3em;
@@ -208,7 +209,7 @@ p {
 #header .homebtn::after {
     display: inline;
     content: "\f015";
-    color: var(--secondary-white);;
+    color: var(--bulleyes);;
     font-family: "FontAwesome";
     left: 50px;
     top: 6px;
@@ -220,7 +221,7 @@ p {
 
 #header .navbtn-open:after {
     /* Use the ::after selector to insert something after the content. */
-    color: var(--secondary-white);
+    color: var(--bulleyes);
     content: "\f0c9";
     /* content: sets the font color in an element */
     font-family: "FontAwesome";
@@ -476,9 +477,12 @@ p {
 
 #hero .container .right {
     flex: 8;
+    animation: fade 1.3s ease-in forwards;
 }
 
 #hero .left .subheading {
+    margin-right: 2rem;
+    margin-left: 2rem;
     font-size: 1.8rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -489,6 +493,8 @@ p {
 }
 
 #hero .left .heading {
+    margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 6rem;
     /* sets default font size */
     font-family: 'Roboto Mono', monospace;
@@ -529,6 +535,7 @@ p {
 }
 
 #hero .left .desc {
+    margin: 2.5rem;
     margin-top: 2.5rem;
     max-width: 400px;
     animation: fade 0.3s ease-in forwards;
@@ -552,7 +559,7 @@ p {
     /* scales ProfilePicture into its container */
     width: 100%;
     max-width: 450px;
-    height: 600px;
+    height: 500px;
     object-fit: cover;
     object-position: 50% 30%;
     border-radius: 12px;
