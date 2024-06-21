@@ -63,7 +63,15 @@ p {
     color: var(--secondary-white);
 }
 
-
+.about-buttons {
+    /* Stock Icon */
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding-left: 6.25rem;
+}
 
 .buttons {
     /* Stock Icon */
@@ -617,6 +625,8 @@ p {
 
 
 #languages {
+
+
     flex-wrap: wrap;
     padding: 30rem 0;
     padding-bottom: 30rem;
@@ -626,6 +636,7 @@ p {
 }
 
 #languages .all-items {
+    
     display: flex;
     align-items: normal;
     justify-content: center;
@@ -733,6 +744,7 @@ p {
 #testimonial {
     padding-top: 15rem 0;
     overflow-x: hidden;
+    color: var(--bulleyes)
 }
 
 #testimonial .all-items {
@@ -746,15 +758,17 @@ p {
 /* Card */
 
 #testimonial .card {
-    background-color: transparent;
-    color: #333;
+    background-color:rgba(183, 224, 244, 0.8);;
+    color: var(--primary-color);;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px var(--bulleyes);
     padding: 40px;
     margin: 18px 10px 40px;
     text-align: center;
     transition: transform 0.2s ease-in;
 }
+
+
 
 #testimonial .flex {
     display: flex;
@@ -802,7 +816,7 @@ p {
 #testimonial .testimonial-subheading {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    color: var(--secondary-gray);
+    color: var(--primary-color);
 }
 
 #testimonial .icon {
@@ -813,7 +827,7 @@ p {
 }
 
 #testimonial .testimonial-desc {
-    color: var(--secondary-gray)
+    color: var(--secondary-blacky)
 }
 
 @media only screen and (max-width: 768px) {
@@ -830,11 +844,13 @@ p {
 /* About Me Section */
 
 #about {
-    padding: 15rem 0;
+    padding-top: 3em;
+    padding: 15em 2;
+    padding-bottom: 12rem;
 }
 
 #about .section-heading {
-    color: var(--bulleyes)
+    color: var(--bulleyes);
 }
 
 
@@ -842,7 +858,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 0rem;
 }
 
 #about .left {
@@ -892,6 +908,11 @@ p {
 #about .subheading {
     color: var(--secondary-white);
     margin-bottom: 1rem;
+}
+
+#about .right {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 #about .right .slogan {

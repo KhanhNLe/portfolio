@@ -10,8 +10,3 @@ $('.overlay').on('click', function(){ // Interacting outside of the overlay clos
     open = false;
 });
 
-// Animation
-// gsap.to("#hero .container .right", {
-//     y: 86,
-//     }
-// );
