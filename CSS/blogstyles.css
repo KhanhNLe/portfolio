@@ -162,6 +162,26 @@ p {
     flex-wrap: wrap;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .read-more {
+        margin-left: 90%; /* Center align for medium screens */
+        margin-right: auto;
+        padding-top: 1.5rem; /* Adjust padding if needed */
+    }
+}
+
+/* Adjust for screens smaller than 480px */
+@media (max-width: 480px) {
+    .read-more {
+        margin-left: 90%; /* Center align for small screens */
+        margin-right: auto;
+        font-size: 1rem; /* Adjust font size for readability */
+        padding-top: 1rem; /* Adjust padding if needed */
+    }
+}
+
+
 .read-more:hover{
     color: var(--secondary-black);
 }
@@ -174,7 +194,6 @@ p {
 }
 
 .blog-post {
-    text-indent: 20px;
     background-color: #b7e0f4;
     padding: 20px;
     border-radius: 8px;
@@ -191,6 +210,7 @@ p {
 }
 
 .post-paragraph {
+    text-indent: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: var(--primary-color);
@@ -200,9 +220,18 @@ p {
 .post-meta {
     text-align: right;
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: 'ASAP Condensed', monospace;
 }
+@media only screen and (max-width: 600px) {
+    .post-meta {
+            text-align: left; /* Center align on smaller screens */
+            margin-top: 0.5rem; /* Reduce top margin */
+            font-size: 1.2rem; /* Decrease font size for smaller screens */
+        }
+    }
+
+
 
 
 /* Footer Section */
@@ -300,6 +329,245 @@ p {
     min-width: 50px;
 }
 
+/* Copyright Styling */
+
+#copyright {
+    padding: 1rem 0;
+    background-color: var(--secondary-black);
+}
+
+#copyright p {
+    text-align: center;
+    color: var(--secondary-white);
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+/* Mobile Responiveness Addon */
+
+
+/* Projects MR */
+@media only screen and (max-width: 450px) {
+    #projects .item .right .buttons {
+        flex-direction: column;
+    }
+
+    #projects .item .right .buttons {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #projects .item {
+        flex-direction: column;
+    }
+
+    #projects .item .left {
+        width: 100%;
+    }
+
+    #projects .item .right {
+        width: 90%;
+        /* to make the right side smaller than the right side */
+        margin-left: 0;
+        margin-top: -150px;
+    }
+
+    #projects .item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    #projects .item:nth-child(even) .left {
+        margin-left: 0;
+    }
+}
+
+
+
+
+/* Hero MR */
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+
+    #hero .container {
+        flex-direction: column-reverse;
+    }
+
+    #hero .container .right {
+        text-align: center;
+        flex: 1;
+        margin-bottom: 2rem;
+    }
+
+    #hero .container .left {
+        text-align: center;
+        padding-right: 0;
+        flex: 1;
+        height: fit-content;
+    }
+
+    #hero .left .buttons {
+        justify-content: center;
+    }
+
+    #hero .left .heading {
+        font-size: 4rem;
+        margin: 0 auto;
+    }
+
+    #hero .container .left .desc {
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    #hero .right img {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    #hero .container .right {
+        flex: 6;
+    }
+}
+
+/* Languages M.R */
+@media only screen and (max-width: 768px) {
+
+    #languages .all-items {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #languages .item .icon {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    #languages .item {
+        margin: 2rem 0;
+    }
+
+    #languages .item:nth-child(1) {
+        background-color: rgb(8, 69, 241, 0.35);
+    }
+
+    #languages .item:nth-child(2) {
+        background-color: rgba(255, 102, 0, 0.35);
+    }
+
+    #languages .item:nth-child(3) {
+        background: linear-gradient(to bottom, rgba(61, 154, 241, 0.55), rgb(250, 235, 98, 0.55));
+    }
+
+    #languages .item:nth-child(4) {
+        background: rgba(255, 174, 0, 0.692);
+    }
+
+}
+
+
+/* Testimonials Mobile Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    #testimonial .all-items {
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        gap: 50px;
+    }
+}
+
+
+
+/* Header MR */
+@media screen and (max-width:48em) {
+    #header .wrap ul.wrap-nav li a {
+        margin: .5rem;
+        font-size: 13px;
+        text-transform: capitalize;
+        margin-bottom: 7.5rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /* Navbar Mobile Responsiveness */
+    #header nav {
+        height: 0rem; /* No Navbar for Right Nyeow */
+        align-items: flex-start;
+    }
+    
+    #header .homebtn::after {
+        opacity: 0%;
+    }
+
+
+    #header .wrap ul.nav-nav>li {
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--bulleyes);
+    }
+
+    #header .wrap ul.wrap-nav {
+        padding: 200px 0px 0px;
+    }
+
+    #header nav ul {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #header .navbarsocial {
+        display: inline-flex;
+        color: var(--secondary-white);
+        font-size: 25px;
+        padding: 25px 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header .social-icon {
+        width: 100%;
+        height: 50px;
+        background: var(--body-bg);
+        color: var(--secondary-white);
+        margin: 0 4rem 0 0;
+    }
+}
+
+
+/* About MR */
+@media only screen and (max-width: 768px) {
+    #about .wrapper {
+        flex-direction: column-reverse;
+        /* Makes Cards Text */
+        text-align: center;
+    }
+
+    #about .right .buttons {
+        flex-direction: column;
+    }
+
+    #about .right .buttons a {
+        width: 80%;
+        /* to make sure icons match */
+        text-align: center;
+    }
+}
+
+
+/* Footer M.R */
 @media only screen and (max-width:768px) {
     #footer footer {
         flex-direction: column;
@@ -322,20 +590,8 @@ p {
     }
 }
 
-/* Copyright Styling */
 
-#copyright {
-    padding: 1rem 0;
-    background-color: var(--secondary-black);
-}
-
-#copyright p {
-    text-align: center;
-    color: var(--secondary-white);
-    margin: 1rem;
-    font-size: 1.4rem;
-}
-
+/* Copyright M.R */
 @media only screen and (max-width:768px) {
     #copyright p {
         text-align: center;

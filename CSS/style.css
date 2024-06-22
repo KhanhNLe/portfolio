@@ -423,8 +423,8 @@ p {
 @media screen and (max-width:768px) {
     /* Navbar Mobile Responsiveness */
     #header nav {
-        height: 8rem;
-        align-items: flex-start
+        height: 0rem; /* No Navbar for Right Nyeow */
+        align-items: flex-start;
     }
     
     #header .homebtn::after {
