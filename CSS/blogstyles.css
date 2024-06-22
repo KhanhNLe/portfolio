@@ -4,16 +4,17 @@
 
 /* Variables */
 :root {
-    --primary-color: #6e485c;
+    --primary-color: #t;
     --bulleyes: #b7e0f4;
     --secondary-black: #a5747c;
-    --secondary-white: #a5747c;
+    --secondary-white: #e2f3fd;
     --body-bg: #b899ac;
     --text-opacity: rgba(255, 255, 255, 0.616);
 }
 
 /* Global Styles */
 * {
+    font-family: 'ASAP Condensed', monospace;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -21,7 +22,7 @@
 }
 
 html {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
     font-size: 10px;
     /* Default font size */
     scroll-behavior: smooth;
@@ -109,7 +110,7 @@ p {
     /* dynamic text scaling (min, viewport width, max) */
     text-transform: uppercase;
     /* changes the font to be bolder */
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
     letter-spacing: 0.2rem;
     text-align: center;
     position: relative;
@@ -126,7 +127,7 @@ p {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
     letter-spacing: 0.2rem;
     color: transparent;
     -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.1);
@@ -147,7 +148,8 @@ p {
 /* Blog Post Section */
 .post-title {
     color: var(--primary-color);
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    font-family: 'ASAP Condensed', monospace;
 }
 
 .read-more {
@@ -159,6 +161,11 @@ p {
     display: flex;
     flex-wrap: wrap;
 }
+
+.read-more:hover{
+    color: var(--secondary-black);
+}
+
 
 .blog-container {
     display: flex;
@@ -186,6 +193,7 @@ p {
 .post-paragraph {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    color: var(--primary-color);
 }
 
 /* Date */ 
@@ -193,5 +201,143 @@ p {
     text-align: right;
     margin-top: 1rem;
     font-size: 1rem;
+    font-family: 'ASAP Condensed', monospace;
 }
 
+
+/* Footer Section */
+
+#footer {
+    background-color: var(--secondary-black);
+    color: var(--bulleyes);
+    padding: 10rem 0 5rem 0;
+}
+
+#footer footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+#footer footer .column-1 {
+        flex: 3;
+}
+
+#footer footer .column-heading { 
+    text-align: center;
+    
+}
+
+#footer footer .column-2,
+#footer footer .column-3,
+#footer footer .column-4 {
+    flex: 2;
+    text-align: center;
+}
+
+#footer footer .column-4 {
+    flex: 1;
+}
+
+#footer footer .column-1 .logo img {
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+#footer .logo {
+    /* Aligns the Github Logo to the Middle */
+    justify-content: center;
+    text-align: center;
+}
+
+
+#footer footer .column-1 p {
+    color: var(--secondary-white);
+}
+
+#footer footer .column-heading {
+    font-family: 'ASAP Condensed', monospace;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+
+#footer footer ul {
+    list-style: none;
+}
+
+#footer footer ul li {
+    border-radius: 4px;
+}
+
+#footer footer ul li:hover a {
+    color: var(--primary-color);
+}
+
+#footer footer ul li:hover {
+    background-color: var(--bulleyes);
+
+}
+
+#footer footer ul li a {
+    display: inline-block;
+    width: auto;
+    color: var(--secondary-white);
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+#footer footer .column-4 ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer footer .column-4 ul li a {
+    min-width: 50px;
+}
+
+@media only screen and (max-width:768px) {
+    #footer footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer footer.column-1,
+    #footer footer.column-2,
+    #footer footer.column-3,
+    #footer footer.column-4 {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    #footer footer .column-4 ul {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+
+/* Copyright Styling */
+
+#copyright {
+    padding: 1rem 0;
+    background-color: var(--secondary-black);
+}
+
+#copyright p {
+    text-align: center;
+    color: var(--secondary-white);
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+@media only screen and (max-width:768px) {
+    #copyright p {
+        text-align: center;
+    }
+}

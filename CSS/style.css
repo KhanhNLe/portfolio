@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,200;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* Test */
 
@@ -21,7 +22,7 @@
 }
 
 html {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
     font-size: 10px;
     /* Default font size */
     scroll-behavior: smooth;
@@ -93,6 +94,10 @@ p {
     /* em : depends on the font size of element */
     border-radius: 50px;
 }
+/* Adds Color Once Hovered */
+.primary-btn:hover {
+    color: var(--bulleyes);
+}
 
 .buttons svg {
     /* Stock Icon */
@@ -108,7 +113,7 @@ p {
     /* dynamic text scaling (min, viewport width, max) */
     text-transform: uppercase;
     /* changes the font to be bolder */
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
     letter-spacing: 0.2rem;
     text-align: center;
     position: relative;
@@ -125,7 +130,7 @@ p {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
     letter-spacing: 0.2rem;
     color: transparent;
     -webkit-text-stroke: 1.5px rgba(0, 0, 0, 0.1);
@@ -217,7 +222,7 @@ p {
 #header .homebtn::after {
     display: inline;
     content: "\f015";
-    color: var(--bulleyes);;
+    color: var(--bulleyes);
     font-family: "FontAwesome";
     left: 50px;
     top: 6px;
@@ -246,12 +251,12 @@ p {
 }
 
 #header .navbtn-open:hover::after {
-    color: var(--secondary-white);
+    color: var(--primary-color);
 }
 
 #header .navbtn-close::after {
     /* Use the ::after selector to insert something after the content. */
-    color: var(--secondary-white);
+    color: var(--bulleyes);
     content: "\f00d";
     /* changes the icon to an x after interaction */
     font-family: "FontAwesome";
@@ -265,24 +270,25 @@ p {
     -o-transition: all .2s linear 0s;
     transition: all .2s linear 0s;
     position: fixed;
-
-
 }
 
 #header .navbtn-open:hover:after {
     /* Use the ::after selector to insert something after the content. */
-    color: var(--bulleyes);
+    color: var(--primary-color);
 }
 
 #header .homebtn:hover:after {
     /* Use the ::after selector to insert something after the content. */
-    color: var(--bulleyes);
+    color: var(--primary-color);
 }
 
 #header .navbtn-close:hover:after {
     /* Use the ::after selector to insert something after the content. */
-    color: var(--bulleyes);
+    color: var(--primary-color);
+    z-index: 99;
 }
+
+
 
 /* Menu Overlay */
 
@@ -295,7 +301,7 @@ p {
     width: 100%;
     background-color: var(--body-bg);
     overflow: auto;
-    z-index: 99;
+    z-index: 98;
 }
 
 #header .wrap {
@@ -404,6 +410,11 @@ p {
     transition: all .2s linear 0s;
 }
 
+#header .social-icon:hover {
+    color: var(--bulleyes);
+}
+
+
 #header .social-icon i {
     margin-top: 12px;
 }
@@ -491,7 +502,7 @@ p {
 #hero .left .subheading {
     margin-right: 2rem;
     margin-left: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.8  rem;
     font-weight: 500;
     text-transform: uppercase;
     color: var(--secondary-white);
@@ -503,9 +514,9 @@ p {
 #hero .left .heading {
     margin-left: 2rem;
     margin-right: 2rem;
-    font-size: 6rem;
+    font-size: 7.5rem;
     /* sets default font size */
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
     font-weight: 900;
     overflow: hidden;
 }
@@ -543,6 +554,7 @@ p {
 }
 
 #hero .left .desc {
+    font-size: 19.5px;
     margin: 2.5rem;
     margin-top: 2.5rem;
     max-width: 400px;
@@ -675,8 +687,8 @@ p {
 
 #languages .item-heading {
     font-weight: 500;
-    font-size: 2rem;
-    font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+    font-family: 'ASAP Condensed', monospace;
     margin-bottom: 1.5rem;
     color: var(--secondary-white);
 
@@ -684,8 +696,8 @@ p {
 
 #languages .item-desc {
     color: var(--secondary-white);
-    font-size: 12.5px;
-    font-family: 'Roboto Mono', monospace;
+    font-size: 17.5px;
+    font-family: 'ASAP Condensed', monospace;
 }
 
 #languages .item:nth-child(1) .icon {
@@ -810,7 +822,7 @@ p {
     /* modifying heading and subheading font size*/
     font-size: 2.4rem;
     text-transform: uppercase;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
 }
 
 #testimonial .testimonial-subheading {
@@ -1036,7 +1048,7 @@ p {
 
 #projects .item .right .project-title {
     font-size: 2.5rem;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
     margin-bottom: 1rem;
     color: var(--bulleyes);
 }
@@ -1157,7 +1169,7 @@ p {
 }
 
 #footer footer .column-heading {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ASAP Condensed', monospace;
     font-size: 2rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -1173,11 +1185,11 @@ p {
 }
 
 #footer footer ul li:hover a {
-    color: var(--bulleyes);
+    color: var(--primary-color);
 }
 
 #footer footer ul li:hover {
-    background-color: #DDDDDD;
+    background-color: var(--bulleyes);
 
 }
 
@@ -1243,4 +1255,3 @@ p {
 }
 
 
-/* TODO Contact Me Section */
