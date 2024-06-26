@@ -35,6 +35,7 @@
             <div class="container">
                 <h2 class="section-heading" data-outline="Le-Blog">Le-Blog</h2>
                 <div class="blog-post">
+                    <!-- Website Post -->
                     <h1 class="post-title">Enhancing My Portfolio Website: Adding Style and Animations</h1>
                     <h3 class="post-meta">Posted on June 20, 2024</h3>
                     <div class="post-content">
@@ -50,7 +51,45 @@
                     <a href="https://github.com/KhanhNLe/portfolio/blob/main/Github%20Portfolio%20Changelog.md" class="read-more">Read More</a>
                 </div>
                 <!-- Repeat the structure for more blog posts -->
-            </div>
+                <!-- Metronome + Spotify BPM & Key Fetcher -->
+                    <div class="blog-post">
+                        <!-- Website Post -->
+                        <h1 class="post-title">Metronome + Spotify BPM and Key Fetcher</h1>
+                        <h3 class="post-meta">Posted on June 26, 2024</h3>
+                        <div class="post-content">
+                            <p class="post-paragraph">
+                                I created this python script, to practice more efficently as I was often playing off tempo, and everytime I wanted to improvise
+                                I would have to google, the key and bpm of the song I wanted to play. 
+                            </p>
+                            </p>
+                            <p class="post-paragraph-bold-header"> Basic Functions as of June 26, 2024:</p>
+                            <p class="post-paragraph">
+                                Metronome Function - with a custom metronome sound that could be changd, I intend to include
+                                easier access when I decide to publicize this into iOS, Android, Windows, and Linux platforms, for now it exists as a simple python script.
+                            </p>
+                            <p class ="post-paragraph">
+                                Fetching Key & BPM - Using Spotify API I was able to use intergrate Spotify's Web API and Playback API to fetch the track info that is linked to your 
+                                account using Spotify's Oauth Process; I intend to use my own domain for redirect links once I understand the process and security risks, and how to properly
+                                secure it. Additionally I also used Spotify's API to call for the track's meta data which includes BPM & Key. Spotify API does most of the heavy lifting.
+                                in this situation.
+                            </p>
+                            <p class ="post-paragraph">
+                                Manual Spotify ID Fetching - I originally started the script with a manual input to fetch from Spotify's Database
+                                rather than using the API to directly access and automatically call it using your Spotify account. Left this feature in 
+                                and added a automatic show/hide button, the only reason I kept this was some of the API still depended on defs of the code, 
+                                breaking the script once it was removed.
+                            </p>
+                            
+                            <p class="post-paragraph">
+                                Future Plans: I intend to eventually migrate this from a Python script to its own respective platform such as: Windows, Linux, iOS, Android, and Mac. 
+                                Once I understand and research more about how app deployments work on each respective platform. For now, it remains a script as I intend to use it only
+                                for practice reasons.
+                            </p>
+
+                            <!-- Add more paragraphs or sections for additional content -->
+                        </div>
+                        <a target="_blank" href="https://github.com/KhanhNLe/SpotifyBPM_KeyGetter/" class="read-more">Read More</a>
+                    </div>
         </section>
     </main>
 
