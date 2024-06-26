@@ -496,7 +496,7 @@ p {
 
 #hero .container .right {
     flex: 8;
-    animation: fade 1.3s ease-in forwards;
+    /* animation: fade 1.3s ease-in forwards; Disabled for Right Now, Testing New Animation Frameworks */ 
 }
 
 #hero .left .subheading {
@@ -1254,4 +1254,6 @@ p {
     }
 }
 
+
+/* Custom Animation */
 
