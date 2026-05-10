@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khanh's Portfolio</title>
+    <title>Khanh Le | M365 & Infrastructure Consultant</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 
@@ -20,7 +18,7 @@
 
         <nav>
             <div class="home">
-                <a class="homebtn" href="#">
+                <a class="homebtn" href="#hero">
                 </a>
             </div>
             <!-- Navbar Elements -->
@@ -35,299 +33,311 @@
             <!-- Overlay for when the Menu Navigation element is called -->
             <div class="wrap">
                 <ul class="wrap-nav">
-                    <li><a href="#About-Me"> About Me</a> <!-- Column 1 of Overlay-->
+                    <li><a href="#hero"> Home</a> <!-- Column 1 of Overlay-->
                     </li>
 
-                    <li><a href="#experiences"> Experience</a> <!-- Column 2 of Overlay -->
+                    <li><a href="#services"> Services</a> <!-- Column 2 of Overlay -->
                     </li>
 
-                    <li><a href="#Certificates"> Certificates</a> 
+                    <li><a href="#expertise"> Expertise &amp; Certs</a> 
+                    </li>
+
+                    <li><a href="#about"> About</a>
+                    </li>
                 </ul>
 
                 <div class="navbarsocial">
             
                     <!-- Navbar Overlay Social Elements -->
-                    <a target="_blank" href="https://www.linkedin.com/in/khanhlecsandit/">
+                    <a target="_blank" href="https://www.linkedin.com/in/khanhlecs/">
                         <div class="social-icon">
-                            <i class="fa fa-linkedin"></i>
+                            <i class="fa-brands fa-linkedin"></i>
                         </div>
                     </a>
                     <a target="_blank" href="https://github.com/KhanhNLe">
                         <div class="social-icon">
-                            <i class="fa fa-github"></i>
+                            <i class="fa-brands fa-github"></i>
                         </div>
                     </a>
                     <a href="mailto:nguyen1005@khanhlecs-itsolutions.com">
                         <div class="social-icon">
-                            <i class="fa fa-mail-forward"></i>
+                            <i class="fa-solid fa-envelope"></i>
                         </div>
                     </a>
-                    <!-- Disable bc I don't have Twitter LOL -->
-                    <a href="#">
-                        <!-- Social Media Icons that Links 
-                        <div class="social-icon">
-                            <i class="fa fa-twitter"></i>
-                        </div>
-                    </a>
-                    -->
                 </div>
             </div>
+        </div>
     </header>
     <!-- Ending of Navbar Section -->
 
     <!-- Beginning of Hero Section -->
     <section id="hero">
-        <!-- section#hero to create "#hero" section -->
         <div class="container">
-            <!-- div.container creates "container" div -->
-            <div class="left">
-                <p class="subheading">My Name Is..</p>
-                <h2 class="heading">
-                    <div class="wrapper"><span>Khanh</span></div> <!-- wrappers for animations -->
-                    <div class="wrapper"><span>N</Nav></span></div>
-                    <div class="wrapper"><span>Le</span></div>
-                </h2>
-                <p class="desc"> I created this website to showcase and document my projects. As well as to maintain this site, as a personal growth journal among many other things.
-                </p>
-                <div class="buttons">
-                    <!-- wraps a button -->
-                    <a href="/Khanh_Le_2024_Current_Dec 21st_2024.pdf" target="_blank" class="primary-btn">Resume</a>
-                    <a href="/blog.html" class="primary-btn">Blog</a>
-                    <a href="https://www.linkedin.com/in/khanhlecsandit" class="primary-btn">LinkedIn</a></a>
+            <div class="hero-layout">
+                <div class="hero-main reveal">
+                    <p class="hero-eyebrow">M365 · Automation · Infrastructure</p>
+                    <h1 class="hero-title">IT Operations That <span class="accent-line">Deliver.</span></h1>
+                    <p class="hero-desc">I clean up messy M365 tenants, standardize endpoints with Intune, and automate the repetitive work that slows teams down.</p>
+                    <div class="hero-links">
+                        <a href="#about" class="hero-link">
+                            <i class="fa-solid fa-user"></i>
+                            <span>About Me</span>
+                            <i class="fa-solid fa-arrow-right link-arrow"></i>
+                        </a>
+                        <a href="Khanh_Le_2026.pdf" class="hero-link" target="_blank">
+                            <i class="fa-solid fa-file-lines"></i>
+                            <span>Resume</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khanhlecs/" class="hero-link" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                            <i class="fa-solid fa-arrow-up-right-from-square link-arrow"></i>
+                        </a>
+                        <a href="mailto:nguyen1005@khanhlecs-itsolutions.com" class="hero-link">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Contact Me</span>
+                            <i class="fa-solid fa-arrow-right link-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal reveal-delay-1">
+                    <div class="hero-img-frame">
+                        <img src="/Image/ProfilePicture-web.jpg" alt="Khanh Le">
+                    </div>
                 </div>
             </div>
-            <div class="right">
-                <img data-aos="fade-in-out"  src="/Image/Hero Image.jpg" alt="Hero Picture">
-            </div>  
         </div>
     </section>
     <!-- Ending of Hero Section -->
 
-    <!-- Beginning of Projects Section-->
+    <!-- Featured Projects -->
     <section id="projects">
         <div class="container">
-            <h2 data-aos="fade-in" data-aos-anchor=".section-heading"  class="section-heading" data-outline="projects">Projects</h2>
-            <div class="all-items">
-                <div class="item">
-                    <div data-aos="slide-right" data-aos-anchor=".section-heading" class="left">
-                        <div class="img">
-                            <img src="Image/Metronome.png" alt="">
-                        </div>
+            <h2 class="section-heading reveal">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card reveal reveal-delay-1">
+                    <span class="project-num">01</span>
+                    <div class="project-header">
+                        <h3 class="project-title">M365 Tenant Cleanup</h3>
                     </div>
-                    <div data-aos="slide-left" data-aos-anchor=".section-heading" class="right">
-                        <h2 class="project-title">Metronome + Spotify BPM and Key Fetcher</h2>
-                        <h3 class="project-sub-title">Made with Python</h3>
-                        <p class="project-desc">Versatile metronome application enhanced with Spotify integration. 
-                            This app leverages Python for its backend functionality and incorporates the Spotify API to enrich user experience.</p>
-                        <div class="buttons">
-                            <a href="https://github.com/KhanhNLe/SpotifyBPM_KeyGetter" class="primary-btn outline external-link"><span>Read More</span>
-                            </a>
-                        </div>
+                    <p class="project-desc">Full tenant audit for a 50-user MSP client — removed 12 stale accounts, reclaimed unused E3 licenses, enforced MFA across admin roles, and documented the entire cleanup with before/after reporting.</p>
+                    <div class="project-tags">
+                        <span>Entra ID</span>
+                        <span>Exchange Online</span>
+                        <span>PowerShell</span>
                     </div>
+                    <a href="m365-license-audit.html" class="project-screenshot" target="_blank">
+                        <img src="Image/m365-audit-dashboard.png" alt="M365 License Audit Dashboard">
+                        <span class="screenshot-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open proof of concept</span>
+                    </a>
                 </div>
-                <!-- <div class="item">
-                    <div class="left">
-                        <div class="img">
-                            <img src="Image/PleaseDont.jpg" alt="">
-                        </div>
+                <div class="project-card reveal reveal-delay-2">
+                    <span class="project-num">02</span>
+                    <div class="project-header">
+                        <h3 class="project-title">Autopilot Zero-Touch Rollout</h3>
                     </div>
-                    <div class="right">
-                        <h2 class="project-title">My Project,</h2> 
-                        <h3 class="project-sub-title">JavaScript</h3> 
-                        <p class="project-desc">Project Description</p> 
-                        <div class="buttons">
-                            <a href="#" class="primary-btn">Learn More</a>
-                            <a href="#" class="primary-btn outline external-link"><span>Preview </span><svg
-                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                                </svg>
-                            </a>
-                        </div>
+                    <p class="project-desc">Configured Windows Autopilot profiles, enrollment status page, and device compliance policies for a law firm. New hires unbox, sign in, and are fully provisioned within 20 minutes.</p>
+                    <div class="project-tags">
+                        <span>Intune</span>
+                        <span>Autopilot</span>
+                        <span>BitLocker</span>
                     </div>
+                    <a href="autopilot-provisioning.html" class="project-screenshot" target="_blank">
+                        <img src="Image/autopilot-provisioning.png" alt="Autopilot Zero-Touch Provisioning Dashboard">
+                        <span class="screenshot-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open proof of concept</span>
+                    </a>
                 </div>
-                <div class="item">
-                    <div class="left">
-                        <div class="img">
-                            <img src="Image/PleaseDont.jpg" alt="">
-                        </div>
+                <div class="project-card reveal reveal-delay-3">
+                    <span class="project-num">03</span>
+                    <div class="project-header">
+                        <h3 class="project-title">Onboarding Automation</h3>
                     </div>
-                    <div class="right">
-                        <h2 class="project-title">My Project</h2> 
-                        <h3 class="project-sub-title">Javascript</h3> 
-                        <p class="project-desc">Project Description </p> 
-                        <div class="buttons">
-                            <a href="#" class="primary-btn">Learn More</a> 
-                            <a href="#" class="primary-btn outline external-link"><span>Preview </span><svg
-                                    xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-                                </svg>
-                            </a>
-                        </div>
+                    <p class="project-desc">PowerShell module that creates AD users, assigns M365 licenses via Graph API, adds security groups, sends welcome emails, and logs to SharePoint. Cut onboarding from 45 min to under 5 min.</p>
+                    <div class="project-tags">
+                        <span>PowerShell</span>
+                        <span>Microsoft Graph</span>
+                        <span>SharePoint</span>
                     </div>
+                    <a href="onboarding-automation.html" class="project-screenshot" target="_blank">
+                        <img src="Image/onboarding-automation.png" alt="Onboarding Automation Pipeline">
+                        <span class="screenshot-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open proof of concept</span>
+                    </a>
                 </div>
-            </div>
-        </div> -->
-    </section>
-    <!-- Ending of Projects Section-->
-
-
-
-
-
-    <!-- Beginning of Languages Section -->
-
-    <!-- scalable by adding more cards -->
-    <section id="languages">
-        <div data-aos="zoom-in-down" data-aos-anchor=".section-heading" data-aos-delay="200"   class="container"> <!-- Scroll on Anchor -->
-            <h2 id="experiences" class="section-heading" data-outline="Experience">Experience</h2>
-            <div class="all-items wrap flex">
-                <div class="item">
-                    <div class="icon">
-                        <img src="Icons/CSS%20Icon.svg">
+                <div class="project-card reveal reveal-delay-4">
+                    <span class="project-num">04</span>
+                    <div class="project-header">
+                        <h3 class="project-title">Backup Audit &amp; DR Validation</h3>
                     </div>
-
-                    <h3 class="item-heading">CSS</h3>
-                    <p class="item-desc"> I been learning and practicing CSS for about a year, learning to experiment
-                        with design and manipulation.
-                    </p>
-                </div>
-
-                <div class="item">
-                    <div class="icon">
-                        <img src="Icons/HTML5%20Icon.svg">
+                    <p class="project-desc">Quarterly backup audit for 3 clients using Veeam and Datto. Verified backup integrity, tested full VM restores, identified retention gaps, and delivered remediation reports with risk ratings.</p>
+                    <div class="project-tags">
+                        <span>Veeam</span>
+                        <span>Datto</span>
+                        <span>DR Planning</span>
                     </div>
-                    <h3 class="item-heading">HTML5</h3>
-                    <p class="item-desc"> I have been using HTML for a year, learning how to format and structure
-                        certain
-                        aspects of the website for visual clarity and appeal.
-                    </p>
-                </div>
-
-                <!-- <div class="item">
-                    <div class="icon">
-                        <img src="Icons/Python%20Icon.svg">
-                    </div>
-                    <h3 class="item-heading">Python</h3>
-                    <p class="item-desc"> I been learning and practicing Python for about a year, and still
-                        pursue the language out of curosity and optimization.</p>
-                </div> -->
-
-                <div class="item">
-                    <div class="icon">
-                        <img src="Icons/JavaScript%20Icon.svg">
-                    </div>
-                    <h3 class="item-heading">Javascript</h3>
-                    <p class="item-desc"> I have been learning and practicing with Javascript to program certain
-                        animations and features
-                        of my website for about a year now.
-                    </p>
+                    <a href="backup-audit-dr.html" class="project-screenshot" target="_blank">
+                        <img src="Image/backup-audit-dr.png" alt="Backup Audit & DR Validation Dashboard">
+                        <span class="screenshot-hint"><i class="fa-solid fa-arrow-up-right-from-square"></i> Open proof of concept</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Ending of of Languages Section -->
 
-
-   
-    <section data-aos="fade-in" data-aos-anchor="#testimonial"  data-aos-delay="250"  id="testimonial">
+    <!-- Beginning of Services Section-->
+    <section id="services">
         <div class="container">
-            <h1 id="Certificates"   class="section-heading" data-outline="Certificates"> Certificates </h1>
-            <div class="all-items flex">
-                <div class="item card">
-                    <div class="img">
-                        <img src="Image/A+.png" alt="A+ Logo">
+            <h2 class="section-heading reveal">Services</h2>
+            
+            <div class="services-grid">
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-card-content">
+                        <div class="service-icon"><i class="fa-brands fa-microsoft"></i></div>
+                        <h3 class="service-title">M365 Tenant Cleanup</h3>
+                        <p class="service-desc">Audit tenants for stale accounts, misassigned licenses, and weak identity posture. Clean up Entra ID roles, enforce MFA, and right-size licensing.</p>
+                        <a href="mailto:nguyen1005@khanhlecs-itsolutions.com" class="service-link">Contact for Availability <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <h3 class="testimonial-heading">A+</h3>
-                    <p class="testimonial-subheading">
-                        June 2024 - June 2027</p>
-                        <div class="icon">
-                            <a href="https://www.certmetrics.com/comptia/public/verification.aspx?code=KTT0RCVWE40PV6KC">
-                                <img
-                                src="/Icons/Check-Mark.svg" 
-                                />
-                            </a>
-                        </div>
-                    <p class="testimonial-desc">
-                        Hardware and software troubleshooting, network configuration, and basic cybersecurity.
-                    </p>
                 </div>
-                <div class="item card">
-                    <div class="img">
-                        <img src="Image/n+.png" alt="N+ Logo">
+
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-card-content">
+                        <div class="service-icon"><i class="fa-solid fa-laptop"></i></div>
+                        <h3 class="service-title">Intune & Endpoint Standardization</h3>
+                        <p class="service-desc">Enroll devices into Intune, configure Windows Autopilot for zero-touch provisioning, and standardize policies across your fleet with BitLocker and compliance.</p>
+                        <a href="mailto:nguyen1005@khanhlecs-itsolutions.com" class="service-link">Contact for Availability <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <h3 class="testimonial-heading">Networking+</h3>
-                    <p class="testimonial-subheading">
-                        Expected July 2024</p>
-                    <div class="icon">
-                        <a href="">
-                            <img
-                            src="/Icons/Check-Mark.svg" 
-                            />
-                        </a>
-                    </div>
-                    <p class="testimonial-desc">
-                        Designing, configuring, managing, and troubleshooting networks, network protocols.
-                    </p>
                 </div>
-                <div class="item card">
-                    <div class="img">
-                        <img src="Image/S+.png" alt="">
+
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-card-content">
+                        <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <h3 class="service-title">Backup Audit & DR Validation</h3>
+                        <p class="service-desc">Audit existing backup solutions and run test restores to confirm recoverability. Honest validation that your DR plan works when you need it most.</p>
+                        <a href="mailto:nguyen1005@khanhlecs-itsolutions.com" class="service-link">Contact for Availability <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                    <h3 class="testimonial-heading">Security+</h3>
-                    <p class="testimonial-subheading">
-                        Expected August 2024</p>
-                        <div class="icon">
-                            <a href="">
-                                <img
-                                src="/Icons/Check-Mark.svg" 
-                                />
-                            </a>
-                        </div>
-                    <p class="testimonial-desc">
-                        Comprehensive knowledge of cybersecurity principles, best industry practices, and technologies.
-                    </p>
+                </div>
+
+                <div class="service-card reveal reveal-delay-4">
+                    <div class="service-card-content">
+                        <div class="service-icon"><i class="fa-solid fa-ticket"></i></div>
+                        <h3 class="service-title">MSP Overflow & Triage</h3>
+                        <p class="service-desc">Tier-2 escalation support and P1 ticket triage for MSPs who need reliable backup during crunch time. Clean documentation and clear handoffs.</p>
+                        <a href="mailto:nguyen1005@khanhlecs-itsolutions.com" class="service-link">Contact for Availability <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card reveal reveal-delay-5">
+                    <div class="service-card-content">
+                        <div class="service-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <h3 class="service-title">PowerShell Automation & Scripting</h3>
+                        <p class="service-desc">Bulk user onboarding and offboarding, automated reporting, policy deployment scripts, and repeatable infrastructure tasks turned into clean, documented automation.</p>
+                        <a href="mailto:nguyen1005@khanhlecs-itsolutions.com" class="service-link">Contact for Availability <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="service-card reveal reveal-delay-6">
+                    <div class="service-card-content">
+                        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="service-title">Azure AD / Entra ID Identity</h3>
+                        <p class="service-desc">Conditional access policies, SSO configuration, guest access management, MFA enforcement, and identity governance to lock down your tenant without blocking productivity.</p>
+                        <a href="mailto:nguyen1005@khanhlecs-itsolutions.com" class="service-link">Contact for Availability <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Ending of Services Section-->
 
-    <!-- Ending of Reference Section -->
+    <!-- Expertise & Certifications Combined Section -->
+    <section id="expertise">
+        <div class="container">
+            <h2 class="section-heading reveal">Expertise &amp; Certifications</h2>
+
+            <!-- Expertise Cards with Integrated Certs -->
+            <div class="expertise-grid">
+                <div class="expertise-card reveal reveal-delay-1">
+                    <div class="expertise-icon">
+                        <i class="fa-brands fa-microsoft"></i>
+                    </div>
+                    <h3 class="expertise-title">Microsoft 365 &amp; Identity</h3>
+                    <p class="expertise-desc">Tenant cleanup, Entra ID hygiene, MFA enforcement, and license optimization.</p>
+                    <div class="expertise-cert">
+                        <i class="fa-brands fa-microsoft"></i>
+                        <span>MS-900</span>
+                        <span class="cert-dot"></span>
+                        <span class="cert-when">June 2025</span>
+                    </div>
+                </div>
+                <div class="expertise-card reveal reveal-delay-2">
+                    <div class="expertise-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <h3 class="expertise-title">Endpoint Management</h3>
+                    <p class="expertise-desc">Intune MDM enrollment, Autopilot provisioning, BitLocker, and compliance policies.</p>
+                    <div class="expertise-cert">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>A+</span>
+                        <span class="cert-dot"></span>
+                        <span class="cert-when">June 2024</span>
+                    </div>
+                </div>
+                <div class="expertise-card reveal reveal-delay-3">
+                    <div class="expertise-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="expertise-title">Infrastructure &amp; Automation</h3>
+                    <p class="expertise-desc">Backup audits, DR validation, Azure fundamentals, and PowerShell automation.</p>
+                    <div class="expertise-cert">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <span>Network+</span>
+                        <span class="cert-dot"></span>
+                        <span class="cert-when">July 2024</span>
+                    </div>
+                    <div class="expertise-cert secondary">
+                        <i class="fa-solid fa-cloud"></i>
+                        <span>AZ-900</span>
+                        <span class="cert-dot"></span>
+                        <span class="cert-when">August 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Beginning of About Me Section -->
-    <section data-aos="fade-down" data-aos-delay="150" data-aos-anchor="#about" id="about">
+    <section id="about">
         <div class="container">
-            <h2 id="About-Me"   class="section-heading" data-outline="about">About</h2>
-            <div class="wrapper">
-                <div class="left">
-                    <div class="card">
-                        <div class="img">
-                            <img src="Image/ProfilePicture.png" alt="">
-                        </div>
-                        <p class="card-desc"> Hello! My name is Khanh Le.
-                        </p>
-                        <h3 class="card-name">My Passion...</h3>
-                        <p class="card-sub-title">From an AMD Phenom II X6 to an I9-9900k, my love for technology started at a young age.
-                            A love that has never been diminishing and ever-growing, as time passes. Such passion led me to pursue a career in
-                            Cybersecurity and Information Technologies.
-                        </p>
+            <h2 class="section-heading reveal">About</h2>
+            <div class="about-card reveal">
+                <div class="about-left">
+                    <div class="about-img">
+                        <img src="Image/ProfilePicture-web.jpg" alt="Khanh Le Profile Picture">
+                    </div>
+                    <p class="about-name">Khanh Le</p>
+                    <p class="about-role">Administrator & Technician</p>
+                    <div class="about-certs">
+                        <span>A+</span>
+                        <span>Net+</span>
+                        <span>MS-900</span>
+                        <span>AZ-900</span>
                     </div>
                 </div>
-
-                <div class="right">
-                    <p class="subheading">My favorite words are..</p>
-                    <h2 class="slogan">Security and Service.</h2>
-                    <p class="right-text"> My passion for cybersecurity drove me to create a home lab where I test server vulnerabilities, experiment with penetration testing tools, and practice subnetting and network hardening. 
-                        This hands-on approach has sharpened my technical skills and deepened my commitment to staying ahead in the field.
-                    </p>
-                    <div class="about-buttons">
-                        <a href="/Khanh_Le_2024_A_ (5).pdf" target=”_blank” class="primary-btn">Resume</a>
-                        <a href="mailto:nguyen1005@khanhcs-itsolutions.com" class="primary-btn">Contact</a>
-                        <a href="https://www.linkedin.com/in/khanhlecsandit" class="primary-btn">LinkedIn</a></a>
+                <div class="about-right">
+                    <p class="about-subheading">My mission is simple..</p>
+                    <h3 class="about-slogan">Systems Adminstration and Service.</h3>
+                    <p class="about-text">M365 and infrastructure tech with MSP & hands-on experience in tenant cleanup, Intune endpoint standardization, backup validation, and PowerShell automation. I work directly with small businesses and MSPs to deliver clean, documented results.</p>
+                    <div class="about-tags">
+                        <span><i class="fa-brands fa-microsoft"></i> M365</span>
+                        <span><i class="fa-solid fa-laptop"></i> Intune</span>
+                        <span><i class="fa-solid fa-terminal"></i> PowerShell</span>
+                        <span><i class="fa-solid fa-cloud"></i> Azure</span>
+                        <span><i class="fa-solid fa-shield-halved"></i> Entra ID</span>
+                        <span><i class="fa-solid fa-server"></i> Backup & DR</span>
+                        <span><i class="fa-solid fa-network-wired"></i> Network+</span>
+                        <span><i class="fa-solid fa-gear"></i> Automation</span>
+                        <span><i class="fa-solid fa-building"></i> Active Directory</span>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -340,70 +350,37 @@
     <!-- Beginning of Footer-->
     <section id="footer">
         <div class="container">
-            <footer>
-                <div class="column-1">
-                    <div class="logo"><a href="https://github.com/KhanhNLe">
-                            <i class="fa fa-github fa-5x"></i>
-                        </a>
-                    </div>
-                    <br>
-                    <p class="logo"> A Portfolio Site. 
-                    </p>
+            <div class="footer-card reveal">
+                <div class="footer-brand">
+                    <p class="footer-name">Khanh Le</p>
+                    <p class="footer-tagline">M365 · Automation · Infrastructure</p>
                 </div>
-                <div class="column-2">
-                    <h2 class="column-heading">Links</h2>
-                    <ul>
-                        <li><a href="#hero">Home</a></li> 
-                        <li><a href="/blog.html">Blog</a></li> 
-                        <li><a href="#Certificates">Certificates</a></li>
-                    </ul>
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#expertise">Expertise &amp; Certs</a>
+                    <a href="#about">About</a>
                 </div>
-                <div class="column-3">
-                    <h2 class="column-heading">Find me On</h2>
-                    <ul>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/khanhlecsandit/">Linkedin</a>
-                         </li>
-                         <li><a href="mailto:nguyen1005@khanhlecs-itsolutions.com">Email</a>
-                        </li>
-                        <li><a target="_blank" href="https://github.com/KhanhNLe">Github</a>
-                        </li>
-                    </ul>
+                <div class="footer-socials">
+                    <a target="_blank" href="https://www.linkedin.com/in/khanhlecs/" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/KhanhNLe" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:nguyen1005@khanhlecs-itsolutions.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
                 </div>
-            </footer>
+            </div>
+            <p class="footer-copy">&copy; 2024 Khanh Le. All rights reserved.</p>
         </div>
     </section>
-<!-- Ending of Footer Section-->
+    <!-- Ending of Footer Section-->
 
 
-<!-- Scripts Section -->
-<!-- Load Order 
-        Load Animation Before Javascript -->
-<!-- GSP (Animation Framework)-->
-    <!-- Zoom out 5% / Bandaid for Right Now-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EaselPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/PixiPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>  
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>       
-<!-- JQuery -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<!-- Javascript -->
+<!-- Scripts -->
     <script src="Javascript/script.js"></script>
 </body>
-
-<!-- Beginning of Copyright Section -->
-<section id="copyright">
-    <div class="container">
-        <p>&copy; Refer to Github Licenses</p>
-    </div>
-</section>
-<!-- Ending of Copyright Section -->
 
 </html>
